@@ -15,6 +15,11 @@
 		22B2BE7E1F40CF2900F037DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B2BE7C1F40CF2900F037DD /* LaunchScreen.storyboard */; };
 		22B2BE891F40CF2900F037DD /* Say_WhatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2BE881F40CF2900F037DD /* Say_WhatTests.m */; };
 		22B2BE941F40CF2900F037DD /* Say_WhatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2BE931F40CF2900F037DD /* Say_WhatUITests.m */; };
+		22B2BEA41F40CF7C00F037DD /* SayWhatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2BEA21F40CF7C00F037DD /* SayWhatViewController.m */; };
+		22B2BEA51F40CF7C00F037DD /* SayWhatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B2BEA31F40CF7C00F037DD /* SayWhatViewController.xib */; };
+		22B2BEAB1F40D55500F037DD /* AnotherOne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22B2BEAA1F40D55500F037DD /* AnotherOne.mp3 */; };
+		22B2BEAD1F40D97400F037DD /* AirHorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22B2BEAC1F40D97400F037DD /* AirHorn.mp3 */; };
+		22B2BEAF1F40DA0900F037DD /* Aw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22B2BEAE1F40DA0900F037DD /* Aw.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		22B2BE8F1F40CF2900F037DD /* Say WhatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Say WhatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B2BE931F40CF2900F037DD /* Say_WhatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Say_WhatUITests.m; sourceTree = "<group>"; };
 		22B2BE951F40CF2900F037DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B2BEA11F40CF7C00F037DD /* SayWhatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SayWhatViewController.h; sourceTree = "<group>"; };
+		22B2BEA21F40CF7C00F037DD /* SayWhatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SayWhatViewController.m; sourceTree = "<group>"; };
+		22B2BEA31F40CF7C00F037DD /* SayWhatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SayWhatViewController.xib; sourceTree = "<group>"; };
+		22B2BEAA1F40D55500F037DD /* AnotherOne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AnotherOne.mp3; path = ../../../../../Downloads/AnotherOne.mp3; sourceTree = "<group>"; };
+		22B2BEAC1F40D97400F037DD /* AirHorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = AirHorn.mp3; path = ../../../../../Downloads/AirHorn.mp3; sourceTree = "<group>"; };
+		22B2BEAE1F40DA0900F037DD /* Aw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Aw.mp3; path = ../../../../../Downloads/Aw.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +112,7 @@
 		22B2BE6D1F40CF2900F037DD /* Say What */ = {
 			isa = PBXGroup;
 			children = (
+				22B2BEA71F40D46300F037DD /* Sounds */,
 				22B2BE711F40CF2900F037DD /* AppDelegate.h */,
 				22B2BE721F40CF2900F037DD /* AppDelegate.m */,
 				22B2BE741F40CF2900F037DD /* ViewController.h */,
@@ -110,6 +122,9 @@
 				22B2BE7C1F40CF2900F037DD /* LaunchScreen.storyboard */,
 				22B2BE7F1F40CF2900F037DD /* Info.plist */,
 				22B2BE6E1F40CF2900F037DD /* Supporting Files */,
+				22B2BEA11F40CF7C00F037DD /* SayWhatViewController.h */,
+				22B2BEA21F40CF7C00F037DD /* SayWhatViewController.m */,
+				22B2BEA31F40CF7C00F037DD /* SayWhatViewController.xib */,
 			);
 			path = "Say What";
 			sourceTree = "<group>";
@@ -138,6 +153,16 @@
 				22B2BE951F40CF2900F037DD /* Info.plist */,
 			);
 			path = "Say WhatUITests";
+			sourceTree = "<group>";
+		};
+		22B2BEA71F40D46300F037DD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				22B2BEAE1F40DA0900F037DD /* Aw.mp3 */,
+				22B2BEAC1F40D97400F037DD /* AirHorn.mp3 */,
+				22B2BEAA1F40D55500F037DD /* AnotherOne.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +232,7 @@
 				TargetAttributes = {
 					22B2BE6A1F40CF2900F037DD = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5UCGDU89YN;
 						ProvisioningStyle = Automatic;
 					};
 					22B2BE831F40CF2900F037DD = {
@@ -246,9 +272,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B2BEAF1F40DA0900F037DD /* Aw.mp3 in Resources */,
 				22B2BE7E1F40CF2900F037DD /* LaunchScreen.storyboard in Resources */,
 				22B2BE7B1F40CF2900F037DD /* Assets.xcassets in Resources */,
+				22B2BEAD1F40D97400F037DD /* AirHorn.mp3 in Resources */,
+				22B2BEA51F40CF7C00F037DD /* SayWhatViewController.xib in Resources */,
 				22B2BE791F40CF2900F037DD /* Main.storyboard in Resources */,
+				22B2BEAB1F40D55500F037DD /* AnotherOne.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +305,7 @@
 			files = (
 				22B2BE761F40CF2900F037DD /* ViewController.m in Sources */,
 				22B2BE731F40CF2900F037DD /* AppDelegate.m in Sources */,
+				22B2BEA41F40CF7C00F037DD /* SayWhatViewController.m in Sources */,
 				22B2BE701F40CF2900F037DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5UCGDU89YN;
 				INFOPLIST_FILE = "Say What/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Say-What.Say-What";
@@ -435,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5UCGDU89YN;
 				INFOPLIST_FILE = "Say What/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Say-What.Say-What";
